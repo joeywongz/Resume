@@ -11,13 +11,15 @@ body {
 }
 
 #page {
-  display: flex;
-  flex-wrap: wrap;
   background: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+.container{
+  display: flex;
+  flex-wrap: nowrap;
+}
 header {
 
   background: #3c3c3c;
@@ -39,7 +41,7 @@ header>p {
 }
 
 aside {
-  width: 240px;
+  flex: 1;
   border-right: 1px solid #ccc;
   position: relative;
   padding-top: 100px;
@@ -131,7 +133,7 @@ section a {
   margin-top: -1px;
 }
 main {
-  flex: 1;
+  flex: 4;
   min-height: calc(100vh - 162px);
 }
 
